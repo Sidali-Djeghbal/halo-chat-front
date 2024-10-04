@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat app - home</title>
+            <!-- CSS file --> 
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="container-fluid">
+  
+  <div class="flex h-screen overflow-hidden">
+
+    <!-- Sidebar -->
+    <div class="w-1/4 bg-white border-r border-gray-300">
+      <header class="p-4 border-b border-gray-300 flex justify-between items-center bg-blue-800 text-white">
+        <h1 class="text-2xl font-semibold">Halo Chat</h1>
+        <div class="relative">
+          <button id="menuButton" class="focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-100" viewBox="0 0 20 20" fill="CurrentColor">
+              <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+              <path d="M2 10a2 2 0 012-2h12a2 2 0 012 2 2 2 0 01-2 2H4a2 2 0 01-2-2z" />
+            </svg>
+          </button>
+          <!-- Menu Dropdown -->
+          <div id="menuDropdown" class="absolute right-0 mt-2 w-48 bg-white border border-gray-300 rounded-md shadow-lg hidden">
+            <ul class="py-2 px-3">
+              <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-gray-400">Option1</a></li>
+              <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-gray-400">Option2</a></li>
+              <!-- Add more menu options here -->
+            </ul>
+          </div>
+        </div>
+      </header>
+    
+      <!-- Contact List -->
+      <div class="overflow-y-auto p-3 mb-9 pb-20" id="contacts">
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username1 </h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username2</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username3</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username4</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username5</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username6</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username7</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username8</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username9</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+        
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-12 h-12 rounded-full">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">username10</h2>
+            <p class="text-gray-600">msg</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex " id="userPanel">
+        <div class="flex items-center mb-4 cursor-pointer hover:bg-gray-100 p-2 rounded-md" id="CurrentUser">
+          <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
+            <img src="/images/profile-pic.png" alt="User Avatar" class="w-full h-full rounded-full object-cover">
+          </div>
+          <div class="flex-1">
+            <h2 class="text-lg font-semibold">Current User</h2>
+          </div>
+          <div class="relative">
+            <button class="flex items-center px-2 py-1 rounded-md text-gray-600 hover:text-gray-800 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-6-6h12zM5 19l6-6H9zM12 5.5a.5.5 0 0 1 0 1H11v2h1v1h-1v1h-1v2h-1V9h-1v1H9v2H8v1H6v-1H5a1 1 0 0 0 0-2h1V9h2v3.5z"/>
+              </svg>
+            </button>
+            <div class="absolute top-full right-0 z-10 hidden bg-white rounded-md shadow-md p-2">
+              <ul class="text-gray-700">
+                <li class="py-1 px-2 hover:bg-gray-100 cursor-pointer">Profile</li>
+                <li class="py-1 px-2 hover:bg-gray-100 cursor-pointer">Settings</li>
+                <li class="py-1 px-2 hover:bg-gray-100 cursor-pointer">Logout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>  
+      </div>
+   
+    
+    <!-- Main Chat Area -->
+    <div class="flex-1">
+        <!-- Chat Header -->
+        <header class="bg-white p-4 text-gray-700">
+            <h1 class="text-2xl font-semibold">username1 </h1>
+        </header>
+        
+        <!-- Chat Messages -->
+        <div class="h-screen overflow-y-auto p-4 pb-36">
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">Hey username, how's it going?</p>
+             </div>
+           </div>
+           
+           <!-- Outgoing Message -->
+           <div class="flex justify-end mb-4 cursor-pointer">
+             <div class="flex max-w-96 bg-blue-500 text-white rounded-lg p-3 gap-3">
+               <p>Hi username1 ! I'm good, just finished a website. How about you?</p>
+             </div>
+             <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+               <img src="/images/profile-pic.png" alt="My Avatar" class="w-8 h-8 rounded-full">
+             </div>
+           </div>
+           
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">That's interesting! What's it about?</p>
+             </div>
+           </div>
+           
+           <!-- Outgoing Message -->
+           <div class="flex justify-end mb-4 cursor-pointer">
+             <div class="flex max-w-96 bg-blue-500 text-white rounded-lg p-3 gap-3">
+               <p>It's about a Chat app , Called Halo Chat.</p>
+             </div>
+             <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+               <img src="/images/profile-pic.png" alt="My Avatar" class="w-8 h-8 rounded-full">
+             </div>
+           </div>
+           
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">I'm intrigued! can i try it?</p>
+             </div>
+           </div>
+           
+           <!-- Outgoing Message -->
+           <div class="flex justify-end mb-4 cursor-pointer">
+             <div class="flex max-w-96 bg-blue-500 text-white rounded-lg p-3 gap-3">
+               <p>Of course! I'll launch it soon..</p>
+             </div>
+             <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+               <img src="/images/profile-pic.png" alt="My Avatar" class="w-8 h-8 rounded-full">
+             </div>
+           </div>
+           
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">Thanks, you're the best!</p>
+             </div>
+           </div>
+           
+           <!-- Outgoing Message -->
+           <div class="flex justify-end mb-4 cursor-pointer">
+             <div class="flex max-w-96 bg-blue-500 text-white rounded-lg p-3 gap-3">
+               <p>Anytime! Let me know how you like it. </p>
+             </div>
+             <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+               <img src="/images/profile-pic.png" alt="My Avatar" class="w-8 h-8 rounded-full">
+             </div>
+           </div>
+           
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">So, new project is coming, right?</p>
+             </div>
+           </div>
+           
+           <!-- Outgoing Message -->
+           <div class="flex justify-end mb-4 cursor-pointer">
+             <div class="flex max-w-96 bg-blue-500 text-white rounded-lg p-3 gap-3">
+               <p>Absolutely! Can't wait to start new idea.</p>
+             </div>
+             <div class="w-9 h-9 rounded-full flex items-center justify-center ml-2">
+               <img src="/images/profile-pic.png" alt="My Avatar" class="w-8 h-8 rounded-full">
+             </div>
+           </div>
+           <!-- Incoming Message -->
+           <div class="flex mb-4 cursor-pointer">
+             <div class="w-9 h-9 rounded-full flex items-center justify-center mr-2">
+               <img src="/images/profile-pic.png" alt="User Avatar" class="w-8 h-8 rounded-full">
+             </div>
+             <div class="flex max-w-96 bg-white rounded-lg p-3 gap-3">
+               <p class="text-gray-700">Good luck !</p>
+             </div>
+           </div>
+           
+        </div>
+        
+        <!-- Chat Input -->
+        <footer class="bg-white border-t border-gray-300 p-4 absolute bottom-0 w-3/4">
+            <div class="flex items-center">
+                <input type="text" placeholder="Type a message..." class="w-full p-2 rounded-md border border-gray-400 focus:outline-none focus:border-blue-500">
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-md ml-2">Send</button>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+
+<script>
+  const dropdownMenus = document.querySelectorAll('.relative > div');
+
+  dropdownMenus.forEach((dropdownMenu) => {
+    const button = dropdownMenu.previousElementSibling;
+
+    button.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+    });
+  });
+</script>
+
+
+</body>
+
+<footer id="footer">
+  <div> 
+    <ul class="footer-links">
+      <p class="text-[15px] leading-loose mb-1">© Halo Chat. All rights reserved.</p>
+    </ul>
+  </div>
+</footer>
+
+</html>
+
